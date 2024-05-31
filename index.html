@@ -3,28 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Weather App</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
         <form id="searchCity">
-          <input type="text" placeholder="Enter a City" />
-          <input type="submit" value="Search" />
+          <input
+            type="text"
+            placeholder="Enter a City"
+            required
+            class="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
         </form>
-        <h1>Switzerland</h1>
       </header>
       <main>
-        <div>Wednesday 20:53, rainy night</div>
-        <div>humidity: 66%, wind: 20km/h</div>
-        <div>🌧13ºC</div>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city">Switzerland</h1>
+
+            <p class="current-details">
+              Wednesday 20:53, <span class="description">rainy night</span>
+              <br />
+              humidity: <strong>66%</strong>, wind: <strong>20km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="temperature-icon">🌧</span>
+            <span class="temperature">13</span>
+            <span class="temperature-unit">ºC</span>
+          </div>
+        </div>
       </main>
       <footer>
         <p>
           This project was coded by
-          <a href="#" target="_blank">Beverley</a> and is
-          <a href="#" target="_blank"> on GitHub</a> and
-          <a href="#" target="_blank">hosted on Netlify</a>
+          <a href="https://github.com/Beverleyxv" target="_blank">Beverley</a>
+          and is
+          <a href="https://github.com/Beverleyxv/Weather-City" target="_blank">
+            on GitHub</a
+          >
+          and
+          <a href="https://weathertopia.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >
         </p>
       </footer>
     </div>
