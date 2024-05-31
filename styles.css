@@ -73,9 +73,9 @@ main {
 
 .temperature-icon {
   position: relative;
-  top: -8px;
-  font-size: 40px;
-  margin-right: 10px;
+  top: 20px;
+  width: 88px;
+  height: 90px;
 }
 
 .temperature {
@@ -87,6 +87,7 @@ main {
   font-size: 28px;
   position: relative;
   top: -38px;
+  left: -10px;
 }
 
 footer {
